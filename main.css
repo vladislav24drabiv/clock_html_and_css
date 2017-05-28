@@ -1,28 +1,45 @@
 @keyframes my1{
-	from{
+	0%{
 		transform:rotate(0deg);
 	}
-	to{
+	/*50%{
+		
+	}*/
+	100%{
 		transform:rotate(360deg);
+		
+	}
+}
+@keyframes my2{
+	0%{
+		background-color: red;
+	}
+	25%{
+		background-color: blue;
+	}
+	50%{
+		background-color: green;
+	}
+	75%{
+		background-color: grey;
 	}
 }
 .circle{
 	height: 200px;width: 200px;
 	border: 2px solid black;
-
 	border-radius: 50%;
 	margin: 0 auto;
-
 	position: relative;
 	margin-top: 5rem;
 	-webkit-box-shadow: 0px 0px 74px -12px rgba(0,0,0,0.69);
 	-moz-box-shadow: 0px 0px 74px -12px rgba(0,0,0,0.69);
 	box-shadow: 0px 0px 74px -12px rgba(0,0,0,0.69);
+	animation: my2 60s steps(1) infinite;
 }
 .line{
 	height: 200px;
 	width: 4px;
-	animation: my1 60s steps(60);
+	animation: my1 60s steps(60) infinite;
 	margin-left: auto;
 	margin-right: auto;	
 	}
@@ -30,7 +47,7 @@
 	height: 100px;
 	width: 4px;
 	background-color: aqua;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 .line2{
 	opacity: 0;
